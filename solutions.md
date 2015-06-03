@@ -34,8 +34,8 @@ How much was spent on books?
 `SELECT SUM(price * quantity) FROM items INNER JOIN orders ON items.id = orders.item_id WHERE items.category LIKE "%Book%";` (1081352)
 
 Simulate buying an item by inserting a User for yourself and an Order for that User.
-
-`INSERT INTO orders (user_id, item_id, quantity, created_at) VALUES (20, 90, 5, CURRENT_TIMESTAMP);`
+`INSERT INTO users VALUES ( "Duncan", "Neal", "duncan.neal@xmail.com");`
+`INSERT INTO orders (user_id, item_id, quantity, created_at) VALUES (378, 20, 90, 5, CURRENT_TIMESTAMP);`
 
 
 What item was ordered most often? Grossed the most money?
