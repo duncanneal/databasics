@@ -31,7 +31,7 @@ How many total items did we sell?
 
 How much was spent on books?
 
-`SELECT SUM(price * quantity) FROM items INNER JOIN orders ON items.id = orders.item_id WHERE items.category LIKE "%Book%";` 1081352
+`SELECT SUM(price * quantity) FROM items INNER JOIN orders ON items.id = orders.item_id WHERE items.category LIKE "%Book%";` (1081352)
 
 Simulate buying an item by inserting a User for yourself and an Order for that User.
 
