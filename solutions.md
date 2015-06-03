@@ -40,6 +40,8 @@ Simulate buying an item by inserting a User for yourself and an Order for that U
 
 What item was ordered most often? Grossed the most money?
 
+`SELECT MAX( quantity ), item_id FROM orders`
+
 What user spent the most?
 
 What were the top 3 highest grossing categories?
