@@ -35,6 +35,9 @@ How much was spent on books?
 
 Simulate buying an item by inserting a User for yourself and an Order for that User.
 
+`INSERT INTO orders (user_id, item_id, quantity, created_at) VALUES (20, 90, 5, CURRENT_TIMESTAMP);`
+
+
 What item was ordered most often? Grossed the most money?
 
 What user spent the most?
