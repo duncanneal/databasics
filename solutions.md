@@ -48,3 +48,4 @@ What user spent the most?
 `SELECT MAX(price * quantity), user_id FROM items INNER JOIN orders ON items.id = orders.user_id;`
 
 What were the top 3 highest grossing categories?
+`SELECT items.price * orders.quantity, items.category FROM items JOIN orders ON items.id = orders.item_id ORDER BY quantity DESC LIMIT 3;`
