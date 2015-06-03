@@ -45,5 +45,6 @@ What item was ordered most often? Grossed the most money?
 `SELECT MAX(price * quantity), item_id FROM items INNER JOIN orders ON items.id = orders.item_id;`
 
 What user spent the most?
+`SELECT MAX(price * quantity), user_id FROM items INNER JOIN orders ON items.id = orders.user_id;`
 
 What were the top 3 highest grossing categories?
